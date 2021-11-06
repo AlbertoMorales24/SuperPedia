@@ -157,11 +157,13 @@ app.post('/ViewSearch', async (req,res)=>{
             .catch(err =>{
                 res.redirect("/error");
             });
-        for(var i=0;i<data.results.length;i++){
-            id.push(data.results[i].id);
-            biography.push(data.results[i].biography);
-            image.push(data.results[i].image);
-            names.push(data.results[i].name);
+        if(data.response != "error"){
+            for(var i=0;i<data.results.length;i++){
+                id.push(data.results[i].id);
+                biography.push(data.results[i].biography);
+                image.push(data.results[i].image);
+                names.push(data.results[i].name);
+            }
         }
     }
     if(sname){

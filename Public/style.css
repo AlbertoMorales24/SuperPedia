@@ -185,6 +185,12 @@ section .a-button{
     }
 }
 
+@media only screen and (max-width: 436px) {
+    section .page-change{
+        min-width: fit-content;
+    }
+}
+
 section .a-button:hover{
     background-color: gray;
     color: white;

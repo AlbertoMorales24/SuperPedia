@@ -98,7 +98,7 @@ header{
 @media only screen and (max-width: 576px) {
     .pagination a{
         font-size: smaller;
-
+        padding: 5px;
     }
 }
 

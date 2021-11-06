@@ -16,7 +16,7 @@
             <div class="container-fluid px-3 py-3 d-flex flex-column">
                 <div class="row">
                     <div class="container-fluid d-flex justify-content-between align-items-center">
-                        <div >
+                        <div class="page-change">
                             <a href=<%- "/ViewOne?id="+(id[0]).toString() %> class="a-button" id="btn-id-name">&laquo; <%= "#"+id[0]+" "+name[0] %> </a>
                             <a href=<%- "/ViewOne?id="+(id[0]).toString() %> class="a-button" id="btn-id">&laquo; <%= "#"+id[0] %> </a>
                         </div>
@@ -24,7 +24,7 @@
                             <img class="align-self-center" src=<%= image[1]["url"] %> class="card-img-top" alt="img">
                             <h4 class="mt-2 fw-bold text-light text-center text-wrap"> <%= "#"+id[1]+": "+name[1] %></h4>
                         </div>
-                        <div >
+                        <div class="page-change">
                             <a href=<%- "/ViewOne?id="+(id[2]).toString() %> class="a-button" id="btn-id-name"><%= "#"+id[2]+" "+name[2] %> &raquo;</a>
                             <a href=<%- "/ViewOne?id="+(id[2]).toString() %> class="a-button" id="btn-id"><%= "#"+id[2] %> &raquo;</a>
                         </div>
